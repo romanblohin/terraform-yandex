@@ -1,4 +1,5 @@
 terraform {
+  required_version = "1.1.5"
   required_providers {
     yandex = {
       source  = "yandex-cloud/yandex"
@@ -7,9 +8,9 @@ terraform {
   }
 
   backend "s3" {
-    endpoint   = "storage.yandexcloud.net"
-    region     = "us-east-1"
-    key        = "yandex/terraform.tfstate"
+    endpoint = "storage.yandexcloud.net"
+    region   = "us-east-1"
+    key      = "yandex/terraform.tfstate"
 
     skip_region_validation      = true
     skip_credentials_validation = true
@@ -17,9 +18,9 @@ terraform {
 }
 
 provider "yandex" {
-  cloud_id                 = var.cloud_id
-  folder_id                = var.folder_id
-  zone                     = "ru-central1-a"
+  cloud_id  = var.cloud_id
+  folder_id = var.folder_id
+  zone      = "ru-central1-a"
 }
 
 locals {

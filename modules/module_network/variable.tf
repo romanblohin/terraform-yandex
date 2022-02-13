@@ -8,7 +8,7 @@ variable "vpc_subnet_zone" {
 
 variable "net_id" {
   description = "Network ID"
-  type = string
+  type        = string
 }
 
 variable "vpc_cidr" {

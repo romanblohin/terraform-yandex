@@ -1,4 +1,5 @@
 terraform {
+  required_version = "1.1.5"
   required_providers {
     yandex = {
       source = "yandex-cloud/yandex"
@@ -24,7 +25,7 @@ provider "yandex" {
 // Create SA
 resource "yandex_iam_service_account" "sa" {
   folder_id = var.folder_id
-  name = "tf-test-sa"
+  name      = "tf-test-sa"
 }
 
 // Grant permissions
