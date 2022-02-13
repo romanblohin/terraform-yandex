@@ -1,7 +1,9 @@
 variable "cloud_id" {
-  type = string
+  description = "Special Yandex Cloud ID"
+  type        = string
 }
 
 variable "folder_id" {
-  type = string
+  description = "Folder ID uses in this project"
+  type        = string
 }

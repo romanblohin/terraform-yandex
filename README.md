@@ -2,6 +2,7 @@
 
 | Name | Version |
 |------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | 1.1.5 |
 | <a name="requirement_yandex"></a> [yandex](#requirement\_yandex) | 0.71.0 |
 
 ## Providers
@@ -29,12 +30,12 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_cloud_id"></a> [cloud\_id](#input\_cloud\_id) | n/a | `string` | n/a | yes |
-| <a name="input_folder_id"></a> [folder\_id](#input\_folder\_id) | n/a | `string` | n/a | yes |
+| <a name="input_cloud_id"></a> [cloud\_id](#input\_cloud\_id) | Special Yandex Cloud ID | `string` | n/a | yes |
+| <a name="input_folder_id"></a> [folder\_id](#input\_folder\_id) | Folder ID uses in this project | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_lamp_public_ip"></a> [lamp\_public\_ip](#output\_lamp\_public\_ip) | n/a |
-| <a name="output_lemp_public_ip"></a> [lemp\_public\_ip](#output\_lemp\_public\_ip) | n/a |
+| <a name="output_lamp_public_ip"></a> [lamp\_public\_ip](#output\_lamp\_public\_ip) | Public Ipv4 address of LAMP server |
+| <a name="output_lemp_public_ip"></a> [lemp\_public\_ip](#output\_lemp\_public\_ip) | Public Ipv4 address of LEMP server |
