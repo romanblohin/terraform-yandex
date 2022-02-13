@@ -15,14 +15,6 @@ terraform {
   }
 }
 
-variable "cloud_id" {
-  type = string
-}
-
-variable "folder_id" {
-  type = string
-}
-
 provider "yandex" {
   cloud_id  = var.cloud_id
   folder_id = var.folder_id

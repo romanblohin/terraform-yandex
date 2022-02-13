@@ -16,14 +16,6 @@ terraform {
   }
 }
 
-variable "cloud_id" {
-  type = string
-}
-
-variable "folder_id" {
-  type = string
-}
-
 provider "yandex" {
   cloud_id                 = var.cloud_id
   folder_id                = var.folder_id
@@ -41,7 +33,6 @@ module "instance_lemp" {
   instance_region = local.lemp_zone
   subn_id         = module.subnet_lemp.subnet_id
 }
-
 
 module "instance_lamp" {
   source          = "./modules/module_instance"
