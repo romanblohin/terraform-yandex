@@ -1,11 +1,11 @@
 variable "family_name" {
   description = "Family name"
-  type = string
+  type        = string
 }
 
 variable "subn_id" {
   description = "Subnet ID"
-  type = string
+  type        = string
 }
 
 variable "instance_region" {
